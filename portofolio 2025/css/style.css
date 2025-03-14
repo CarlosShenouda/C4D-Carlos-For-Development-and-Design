@@ -1,0 +1,610 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* html {
+  scroll-padding-top: 60px;
+} */
+/* ------------------------→ nav styling */
+nav {
+  background: linear-gradient(to bottom, black 55%, rgba(0, 0, 0, 0) 100%);
+  font-family: "Public Sans", serif;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  animation: glow-text 1.5s infinite alternate;
+}
+
+@keyframes glow-text {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 25px rgba(255, 255, 255, 1);
+  }
+}
+
+nav .nav-item {
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.navbar .nav-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  left: 6px;
+  opacity: 0;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+.navbar .nav-item a:hover::after {
+  width: 92%;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+nav .nav-link {
+  color: #ffffff9f !important;
+}
+nav .nav-link.active {
+  color: #ffffff !important;
+}
+nav .nav-link:hover {
+  color: #fff !important;
+}
+nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  left: 6px;
+  opacity: 1;
+  transition: width 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+/* ------------------------→ header styling*/
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)),
+    url(../imgs/carlos-shenouda-header.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-content {
+  transform: translateY(3.825rem);
+}
+
+.header-content p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+header h1 {
+  font-size: 4.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: #d56942;
+}
+
+.typed-cursor {
+  font-size: 2em;
+}
+
+.typing .auto-type {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: glow-text 1.5s infinite alternate;
+  font-weight: 600;
+}
+.home-btns a {
+  display: inline-block !important;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 35px;
+  letter-spacing: 2px;
+  font-family: "Public Sans", serif;
+  color: white;
+  margin-top: 15px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+.home-btns .btn-1 {
+  background-color: red;
+  transition: background 0.5s ease;
+}
+
+.home-btns .btn-2 {
+  border: 2px solid white;
+  width: 231px;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+
+.home-btns .btn-1:hover {
+  background-color: #dbbaaea6 !important;
+}
+
+.home-btns .btn-2:hover {
+  background-color: #6a6464ee !important;
+}
+
+.social-media {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 42%;
+  right: 5%;
+  width: fit-content;
+  height: 200px;
+}
+
+.social-media a i {
+  padding-top: 35px;
+  color: rgb(126, 227, 227);
+  font-size: 28px;
+  transition: transform 0.5s ease;
+}
+
+.social-media a i:hover {
+  transform: scale(1.5);
+  color: rgb(206, 79, 79);
+}
+/* ------------------------→ section header styling */
+.section-header {
+  position: relative;
+}
+.about-text p {
+  color: rgb(230, 232, 233);
+}
+.section-header span {
+  position: absolute;
+  font-family: "Public Sans", serif;
+  font-weight: 600;
+  font-size: 9em;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: #eff1ef8a;
+  margin-right: 10px;
+  position: absolute;
+  top: -0.25em;
+  left: -0.1em;
+  opacity: 0.5;
+}
+
+.section-header h2 {
+  color: aliceblue;
+  position: relative;
+  z-index: 2;
+  font-family: "Castoro", serif;
+  font-size: 50px;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+/* ------------------------→ about styling */
+.about-img {
+  position: relative;
+  border: 4px solid white;
+  border-radius: 50px;
+  width: 80%;
+  margin-inline: auto;
+  transform: translate(-10px, 15px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
+
+.about-img img {
+  position: relative;
+  transform: translate(20px, 20px);
+  width: 100%;
+}
+
+.about-text p {
+  font-family: "Public Sans", serif;
+  font-size: 1.2105rem;
+  letter-spacing: 0.5px;
+}
+
+.about-text p span {
+  color: #ca633d;
+  font-size: 1.725rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.social-media-about {
+  display: none;
+}
+/* ------------------------→ what i do styling */
+.whatido-card i {
+  padding: 50px;
+  font-size: 2rem;
+  width: 20px;
+  height: 20px;
+  color: rgb(193, 195, 197);
+  border: 10px solid #4f4f5a;
+  border-radius: 50%;
+  transition: background 0.5s ease, border-color 0.5s ease;
+}
+
+.whatido-card:hover i {
+  background-color: #4f4f5a;
+  border-color: rgb(237, 248, 248);
+  color: white;
+}
+
+.whatido-cards h4 {
+  font-size: 1.65rem;
+  text-transform: capitalize;
+  color: rgb(237, 248, 248);
+}
+
+.whatido-cards p {
+  font-family: "Public Sans", serif;
+  color: rgb(237, 248, 248);
+}
+/* ------------------------→ works styling */
+.img-itself .layer {
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.img-itself:hover .layer {
+  opacity: 1;
+  height: 100%;
+}
+
+.img-itself {
+  position: relative;
+  overflow: hidden;
+}
+.img-itself img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+.img-itself:hover img {
+  transform: scale(1.2);
+}
+
+.works .nav-link.active {
+  padding-inline: 40px;
+  background-color: #df7f5b;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-right: 3px;
+  font-weight: 600;
+}
+
+.works .nav-link {
+  color: aqua;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.carousel-indicators li {
+  list-style-type: none;
+}
+
+.carousel-indicators li::before {
+  content: "";
+}
+/* ............................................................ */
+.layer {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.layer.show-layer {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* ------------------------→ blogs styling */
+.blog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(../imgs/sl_0210121_40570_43.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.blog-card {
+  background-color: black;
+  color: white !important;
+  border-image: linear-gradient(to bottom, black, white) 1;
+}
+.blog-img {
+  overflow: hidden;
+}
+.blog-img img {
+  transition: transform 0.5s ease;
+}
+
+.blog-img:hover img {
+  transform: scale(1.5);
+}
+.blog-card-text a {
+  color: #d17250;
+}
+
+.blog-card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.486);
+  background-color: rgba(33, 37, 41, 0.03);
+}
+
+.blog-card-footer img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.blog-category h6 {
+  font-size: 0.69rem;
+}
+
+.blog-card a {
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+
+.blog-card a:hover {
+  color: rgba(13, 110, 253, 1) !important;
+}
+
+/* ------------------------→ feedback section styling */
+
+.feedback .inner img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback-text {
+  position: relative;
+}
+.feedback-text::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: blueviolet;
+  left: -15px;
+  top: 0;
+}
+
+.feedback-text p i {
+  font-size: larger;
+}
+
+.feedback .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: all 0.4s ease;
+  margin: 0 5px;
+  border: none;
+}
+
+.feedback .carousel-indicators .active {
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+.feedback .carousel-indicators [data-bs-target] {
+  position: relative;
+  bottom: -90px;
+}
+
+.write-comment {
+  margin-top: 80px;
+}
+.write-comment textarea {
+  height: 140px;
+  resize: none;
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+.write-comment textarea::placeholder {
+  color: white;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+.feedback-send {
+  transition: all 0.5s ease;
+}
+.feedback-send:hover {
+  background-color: aqua !important;
+  color: black !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------→ contact section styling */
+
+.contact-us {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(../imgs/sl_0210121_40570_34.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Public Sans", serif;
+}
+
+.contact-p {
+  font-family: "Merriweather", serif;
+  font-size: 110px;
+  position: relative;
+  color: #46574fc0;
+}
+
+.contact-p::after {
+  content: "";
+  position: absolute;
+  background-color: #46574fc0;
+  width: 16%;
+  height: 3px;
+  top: 50%;
+  left: 24%;
+}
+
+form input {
+  width: 48% !important;
+  border-bottom: 2px solid white !important;
+}
+
+form .form-inputs input,
+form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.779);
+  padding: 10px 0;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+form .form-area {
+  width: 50%;
+  height: 100px;
+  resize: none;
+}
+
+form .form-area::placeholder,
+.form-inputs input {
+  color: white !important;
+  opacity: 0.5;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+
+.form-inputs input {
+  opacity: 0.7;
+}
+
+form .form-area::placeholder {
+  position: relative;
+  top: 50px;
+}
+
+.contact-links ul li i {
+  border: 1px solid #62756b;
+  color: #6b8075;
+}
+
+.contact-links ul li i {
+  transition: all 0.5s ease;
+}
+.contact-links ul li:hover i {
+  background-color: #1f1f1f;
+  color: white;
+  border: 1.5px solid white;
+}
+form button.btn {
+  transition: color 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+}
+
+form button:hover {
+  color: #62756b !important;
+  background-color: #ffffff !important;
+  transform: scale(1.2);
+}
+
+/* ------------------------→ footer section styling */
+footer {
+  position: relative;
+  font-family: "Public Sans", serif;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  background-color: #46574fc0;
+  width: 80%;
+  height: 1px;
+  top: 0;
+}
+
+footer span,
+a {
+  color: rgb(114, 55, 55);
+  transition: all 0.5s ease;
+}
+
+footer a:hover {
+  letter-spacing: 2px;
+  color: rgb(248, 245, 245);
+}
