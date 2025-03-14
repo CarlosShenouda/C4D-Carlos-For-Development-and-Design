@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://c4d-carlos-for-development-and-design.netlify.app/sitemap.xml
