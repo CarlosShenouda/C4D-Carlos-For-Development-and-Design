@@ -46,10 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
-  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-    target: "#navbar",
-    offset: 100,
+  new bootstrap.ScrollSpy(document.body, {
+    target: "#navbar-example",
+    offset: 100
   });
-});
+});;
