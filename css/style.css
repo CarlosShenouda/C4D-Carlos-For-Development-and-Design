@@ -9,9 +9,9 @@ h6 {
 body, html {
   overflow-x: hidden;
 }
-/* html {
+html {
   scroll-padding-top: 60px;
-} */
+}
 /* ------------------------→ nav styling */
 nav {
   background: linear-gradient(to bottom, black 55%, rgba(0, 0, 0, 0) 100%);
